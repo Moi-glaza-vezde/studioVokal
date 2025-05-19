@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- В head -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+         rel="stylesheet" />
+
+      <link rel="stylesheet" href="./css/styles.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <section class="wrapper">
+         <header class="header">
+            <p class="header__address">Москва, Стромынка, д.11, р-н Сокольники</p>
+            <div class="header__container container">
+               <!-- Логотип -->
+               <div class="header__logo">
+                  <img src="./img/logo/logo.png" alt="Логотип школы вокала" />
+               </div>
+
+               <!-- Навигация -->
+               <nav class="header__nav">
+                  <ul class="header__nav-list">
+                     <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link">О нас</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="#program" class="header__nav-link">Aренда</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="#reviews" class="header__nav-link">Творчество</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="#prices" class="header__nav-link">Цены</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="#contacts" class="header__nav-link">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+
+               <!-- Контакты -->
+               <div class="header__contacts">
+                  <a href="tel:+71234567890" class="header__phone">+7 (123) 456-78-90</a>
+                  <a href="https://t.me/yourgroup" target="_blank" class="header__telegram">TG </a>
+
+                  <button class="header__call-btn">Позвонить</button>
+               </div>
+            </div>
+         </header>
+
+         <main class="main">
+            <div class="main__container container">
+               <!-- Заголовок -->
+               <div class="main__title-box">
+                  <h1 class="main__title">Уроки вокала в Москве</h1>
+
+                  <h2 class="main__title-sub-title">Для взрослых и детей</h2>
+
+                  <!-- Дополнительный текст -->
+                  <div class="main__text-block">
+                     <p class="main__text">
+                        В дружественной обстановке поможем раскрыться, снять зажимы и научим петь
+                        вашим естественным и красивым голосом.
+                     </p>
+                     <p class="main__text">
+                        А на регулярных квартирниках вы избавитесь от стеснения, психологических
+                        зажимов и раскрепоститесь.
+                     </p>
+                     <p class="main__text">Стань частью нашего дружного сообщества.</p>
+                  </div>
+                  <!-- QR-код -->
+                  <div class="main__qr">
+                     <img src="./img/main/qr.jpg" alt="QR код чата" class="main__qr-img" />
+                  </div>
+                  <!-- Кнопка для перехода в WhatsApp -->
+                  <a href="https://wa.me/71234567890" target="_blank" class="main__button">
+                     Записаться в WhatsApp
+                  </a>
+               </div>
+               <!-- Фото -->
+               <div class="main__image">
+                  <img src="./img/main/2.png" alt="Уроки вокала" />
+               </div>
+            </div>
+         </main>
+
+         <section id="teachers" class="teachers">
+            <div class="teachers__container container">
+               <!-- Первый заголовок -->
+               <h2 class="teachers__studio-title">В студии "Еноты" ты запоешь по полной</h2>
+
+               <!-- Второй заголовок -->
+               <h3 class="teachers__subtitle">По любимому направлению</h3>
+
+               <!-- Карточки преподавателей -->
+               <div class="teachers__cards">
+                  <h3 class="teachers__subtitle">Наши педагоги</h3>
+                  <!-- Блок 1 -->
+
+                  <div id="teachersCardsBlock1" class="teachers__cards-block-1">
+                     <!-- Карточка преподавателя -->
+                     <div class="teacher-card">
+                        <div class="teacher-card__image">
+                           <img src="./img/teachers/m.jpg" alt="Мария" />
+                        </div>
+
+                        <div class="teacher-card__card-info">
+                           <h3 class="teacher-card__name">Мари</h3>
+                           <p class="teacher-card__intro">
+                              Преподаватель эстрадного, рок и экстремального вокала, а также
+                              артистического мастерства.
+                           </p>
+
+                           <div class="teacher-card__experience">
+                              <p class="teacher-card__text">
+                                 В музыкальной сфере я уже более 10 лет. За это время набиралась
+                                 опыта и училась у таких педагогов, как:
+                              </p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    Юлиана Савченко (Witchcraft, Рок-опера Орфей, Эпидемия,
+                                    преподаватель IVOX studio)
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Антон Всеядный (Up the Stairs, преподаватель Fox Sound, IBR
+                                    студия звукозаписи)
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Ника Волынец (Big City Lights, преподаватель Siren Vocal Studio)
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Мария Хижняк (Masha MORR, Red Hize, преподаватель студии вокала
+                                    Rock'n'Voices)
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="teacher-card__skills">
+                              <p class="teacher-card__text">
+                                 Я не только вокалистка, но и владею DAW программами, играю на
+                                 гитаре и фортепиано, пишу аранжировки. В сольном проекте
+                                 <strong>“Marecold”</strong> выпустила два трека, 3 года была
+                                 участницей метал-группы <strong>Dark|Light|Sky</strong>.
+                              </p>
+                           </div>
+
+                           <div class="teacher-card__help">
+                              <p class="teacher-card__text">Я помогу вам:</p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    Освоить базу — типы смыкания, атаки, управление мышцами, основы
+                                    расщепления
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Спеть любимые треки, изучить сложные приёмы, улучшить технику,
+                                    добавить уверенности
+                                 </li>
+                                 <li class="teacher-card__item">Просто поднять настроение 😊</li>
+                              </ul>
+                           </div>
+
+                           <div class="teacher-card__specials">
+                              <ul class="teacher-card__list teacher-card__list--inline">
+                                 <li class="teacher-card__item">Постановка дыхания — ✅</li>
+                                 <li class="teacher-card__item">
+                                    Обучение с нуля и продвинутый уровень — ✅
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Эстрадные техники: Субтон, Микст, Бэлт, Краинг, Фальцет,
+                                    Свисток, Рэттл — ✅
+                                 </li>
+                                 <li class="teacher-card__item">Мелизмы, йодли, вибрато — ✅</li>
+                                 <li class="teacher-card__item">
+                                    Экстрим-приёмы: Фрай (штробасс), Компрессия, Драйв, Харш, Скрим,
+                                    Гроул — ✅
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Вторая карточка -->
+                     <div class="teacher-card">
+                        <div class="teacher-card__image">
+                           <img src="./img/teachers/i.jpg" alt="Эдита" />
+                        </div>
+                        <div class="teacher-card__card-info">
+                           <h3 class="teacher-card__name">
+                              Ирина <span class="teacher-card__handle">@IrMaa98</span>
+                           </h3>
+                           <p class="teacher-card__intro">
+                              Преподаватель по вокалу для начинающих.
+                           </p>
+
+                           <div class="teacher-card__experience">
+                              <p class="teacher-card__text">За плечами:</p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    Более 15 лет вокальной практики, включая конкурсные выступления
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Оконченная музыкальная школа по классу академического вокала
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Курс по мелизматике от Ольги Кляйн (Москва)
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Недельный курс по мелизматике от Prema_latika
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    2+ года обучения у частного преподавателя Анны Власовой (Москва)
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Семинар фониатора Льва Рудина «Школа здорового голоса»
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Опыт преподавания у взрослых более двух лет
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Теоретическая музыкальная база (ЭТМ)
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Курс «Стилистика 2.0» в Telliodora Music School
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="teacher-card__skills">
+                              <p class="teacher-card__text">
+                                 Состою в рок-группе. Учу эстрадному вокалу, а также переходу с
+                                 академического на эстрадный. Использую элементы техник
+                                 <strong>EVT</strong> в практике.
+                              </p>
+                           </div>
+
+                           <div class="teacher-card__help">
+                              <p class="teacher-card__text">
+                                 Вам ко мне, если у вас есть такие запросы:
+                              </p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    📍 Как убрать телесные зажимы во время пения (особенно на
+                                    верхних нотах)
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    📍 Как сделать так, чтобы «хватало дыхания» во время длинных
+                                    фраз
+                                 </li>
+                                 <li class="teacher-card__item">📍 Как чётко попадать в ноты</li>
+                                 <li class="teacher-card__item">📍 Как держать опору</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Третья карточка -->
+                     <div class="teacher-card">
+                        <div class="teacher-card__image">
+                           <img src="./img/teachers/a.jpg" alt="Имя преподавателя" />
+                        </div>
+                        <div class="teacher-card__card-info">
+                           <h3 class="teacher-card__name">Ервандян Эдита 🤍</h3>
+
+                           <div class="teacher-card__experience">
+                              <p class="teacher-card__text">Немного обо мне:</p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    Окончила Московский Государственный Институт Культуры в 2023
+                                    году (заведующей кафедрой — Лариса Долина)
+                                 </li>
+                                 <li class="teacher-card__item">Преподаю 4 года</li>
+                                 <li class="teacher-card__item">
+                                    Имею опыт работы с учениками от 5 до 60 лет
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Постоянно повышаю квалификацию:
+                                    <ul class="teacher-card__list teacher-card__list--nested">
+                                       <li class="teacher-card__item">
+                                          обе ступени EVT (Estill Voice Training)
+                                       </li>
+                                       <li class="teacher-card__item">
+                                          вводный курс CVT (Complete Vocal Technique)
+                                       </li>
+                                       <li class="teacher-card__item">
+                                          мелизматика от Ольги Кляйн
+                                       </li>
+                                       <li class="teacher-card__item">
+                                          высокие ноты от Даши Манаковой
+                                       </li>
+                                       <li class="teacher-card__item">
+                                          джазовая импровизация от Анастасии Балевой
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Выступала со звездами эстрады: Лариса Долина, Леонид Агутин,
+                                    Этери Бериашвили и др.
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Лауреат и гран-призёр всероссийских и международных вокальных
+                                    конкурсов
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="teacher-card__skills">
+                              <p class="teacher-card__text">
+                                 Я очень неравнодушна к обучению, сама много училась и готова
+                                 <strong>действительно научить тебя петь</strong>.
+                              </p>
+                           </div>
+
+                           <div class="teacher-card__help">
+                              <p class="teacher-card__text">На занятиях со мной ты получишь:</p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    • умение разбираться в анатомии своего голоса
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    • упражнения, подобранные под твои точки роста
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    • подробный разбор каждой песни — вместе, до мелочей
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Блок 2 -->
+                  <div
+                     id="teachersCardsBlock2"
+                     class="teachers__cards-block-2 close-teachers-block">
+                     <!-- 4  карточка -->
+                     <div class="teacher-card">
+                        <div class="teacher-card__image">
+                           <img src="./img/teachers/n.jpg" alt="Имя преподавателя" />
+                        </div>
+                        <div class="teacher-card__card-info">
+                           <h3 class="teacher-card__name">Наталья Нэйман</h3>
+                           <p class="teacher-card__intro">Преподаю вокал онлайн</p>
+
+                           <div class="teacher-card__experience">
+                              <p class="teacher-card__text">Образование:</p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    МГИК — институт культуры, класс саксофона
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    ПГИИ — институт искусств, эстрадно-джазовое пение
+                                 </li>
+                              </ul>
+
+                              <p class="teacher-card__text">
+                                 Стаж преподавания эстрадно-джазового вокала —
+                                 <strong>20 лет</strong>, в том числе в институте искусств.
+                              </p>
+
+                              <p class="teacher-card__text">
+                                 В настоящее время преподаю в <strong>Гнесинке</strong> на отделении
+                                 мюзикл-шоу программы и обучаюсь в аспирантуре Московской
+                                 консерватории (поступление через конкурс для иностранных
+                                 студентов).
+                              </p>
+
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    Заслуженный работник культуры ПМР
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    Преподаватель высшей квалификационной категории
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="teacher-card__skills">
+                              <p class="teacher-card__text">
+                                 Победитель конкурса по результатам педагогической работы (1 место в
+                                 рейтинге). За последние 3 года подготовила
+                                 <strong>35 победителей</strong> (Гран-при, лауреаты I, II, III
+                                 степени) на конкурсах международного, республиканского и
+                                 муниципального уровня.
+                              </p>
+
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    Автор идеи и сценария мюзикла «Звуки музыки»
+                                 </li>
+                                 <li class="teacher-card__item">Сценарист и ведущая концертов</li>
+                                 <li class="teacher-card__item">Опытный пользователь ПК</li>
+                                 <li class="teacher-card__item">
+                                    Коммуникабельна, позитивна, дисциплинирована и ответственна
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="teacher-card__help">
+                              <p class="teacher-card__text">
+                                 Работаю с профессионалами. Мои выпускники — солисты оркестров,
+                                 вокальных ансамблей, преподаватели в вузах и колледжах.
+                              </p>
+                              <p class="teacher-card__text">Возраст учеников — от 5 до 60 лет.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- 5 карточка -->
+                     <div class="teacher-card">
+                        <div class="teacher-card__image">
+                           <img src="./img/teachers/o.jpg" alt="Имя преподавателя" />
+                        </div>
+                        <div class="teacher-card__card-info">
+                           <h3 class="teacher-card__name">Ольга</h3>
+                           <p class="teacher-card__intro">
+                              Преподаватель современного эстрадного вокала
+                           </p>
+
+                           <div class="teacher-card__help">
+                              <p class="teacher-card__text">🎙️ Если вы хотите:</p>
+                              <ul class="teacher-card__list">
+                                 <li class="teacher-card__item">
+                                    🥳 Петь ярко, красиво, эмоционально и уверенно
+                                 </li>
+                                 <li class="teacher-card__item">🔥 Найти свою манеру исполнения</li>
+                                 <li class="teacher-card__item">
+                                    💣 Освоить вокальные приёмы (твенг, фрай, фальцет, бэлтинг)
+                                 </li>
+                                 <li class="teacher-card__item">⚡ Избавиться от напряжения</li>
+                                 <li class="teacher-card__item">
+                                    🎶 Достать высокие и низкие ноты
+                                 </li>
+                                 <li class="teacher-card__item">
+                                    🌟 Почувствовать мощь и разнообразие своего голоса
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="teacher-card__skills">
+                              <p class="teacher-card__text">
+                                 🎹 На занятиях мы разберём особенности вашего звучания и уберём
+                                 всё, что мешает петь свободно.
+                              </p>
+                              <p class="teacher-card__text">
+                                 😎 Вы освоите современные вокальности, поймёте, как они
+                                 формируются, научитесь петь мелизмы и многое другое.
+                              </p>
+                              <p class="teacher-card__text">
+                                 🎶 Подберём интересный репертуар — вы будете петь то, что нравится
+                                 вам!
+                              </p>
+                           </div>
+
+                           <div class="teacher-card__experience">
+                              <p class="teacher-card__text">
+                                 💣 Ко мне обращаются как студенты вокальных вузов, так и новички. Я
+                                 помогаю готовиться к международным конкурсам, работать над
+                                 авторским репертуаром, мюзиклами, и даже выпускать собственные
+                                 песни.
+                              </p>
+                              <p class="teacher-card__text">
+                                 Я изучила зарубежные методики (EVT, Cheryl Porter, Seth Riggs и
+                                 др.), и на их основе разработала свою собственную систему.
+                              </p>
+                              <p class="teacher-card__text">
+                                 🔥 Среди моих учеников: Mika Vino, Julia Milows, Феликс Салий (для
+                                 него я написала песню "Красноречие"), Зульфия Выдумкина (2 место —
+                                 конкурс "Мастер Мюзикла"), Алексей Земсков (2 место — конкурс
+                                 Imusio).
+                              </p>
+                           </div>
+
+                           <div class="teacher-card__text">
+                              <p>
+                                 Я уверена, что хорошо петь можно научить любого — главное, это
+                                 совместная работа в доброжелательной, весёлой атмосфере. Ведь вокал
+                                 — это место, где вы развиваетесь с удовольствием! 🎤✨
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Добавляешь столько карточек, сколько нужно -->
+               </div>
+
+               <a id="teachersBtnPrev" class="teachers__btn-prev" href="#teachers">назад</a>
+
+               <a id="teachersBtnNext" class="teachers__btn-next" href="#teachers"
+                  >еще преподователи</a
+               >
+            </div>
+         </section>
+         <section class="pricing">
+            <div class="pricing__container container">
+               <h2 class="pricing__title">Цены на занятия</h2>
+
+               <div class="pricing__cards">
+                  <!-- Карточка 1 -->
+                  <div class="pricing__card">
+                     <h3 class="pricing__card-title">Индивидуальное занятие</h3>
+                     <p class="pricing__card-price">2200 ₽ / 50 мин</p>
+                     <p class="pricing__card-note">Абонемент на 4 занятия — 8000 ₽</p>
+                     <a
+                        href="https://wa.me/71234567890"
+                        target="_blank"
+                        class="pricing__card-button callBtn">
+                        Записаться в WhatsApp
+                     </a>
+                  </div>
+
+                  <!-- Карточка 2 -->
+                  <div class="pricing__card">
+                     <h3 class="pricing__card-title">Групповое занятие</h3>
+                     <p class="pricing__card-price">1500 ₽ / 1.5 часа</p>
+                     <p class="pricing__card-note">В группе не более 3 человек</p>
+                     <a
+                        href="https://wa.me/71234567890"
+                        target="_blank"
+                        class="pricing__card-button callBtn">
+                        Записаться в WhatsApp
+                     </a>
+                  </div>
+
+                  <!-- Карточка 3 -->
+                  <div class="pricing__card">
+                     <h3 class="pricing__card-title">Онлайн занятие</h3>
+                     <p class="pricing__card-price">2000 ₽ / час</p>
+                     <p class="pricing__card-note">Удобный формат на платформе Zoom</p>
+                     <a
+                        href="https://wa.me/71234567890"
+                        target="_blank"
+                        class="pricing__card-button callBtn">
+                        Записаться в WhatsApp
+                     </a>
+                  </div>
+
+                  <!-- Карточка 4 -->
+                  <div class="pricing__card">
+                     <h3 class="pricing__card-title">Пробное занятие</h3>
+                     <p class="pricing__card-price">Индивидуальное — 1800 ₽ / 50 мин</p>
+                     <p class="pricing__card-price">Групповое — 1000 ₽ / 1.5 часа</p>
+                     <a
+                        href="https://wa.me/71234567890"
+                        target="_blank"
+                        class="pricing__card-button callBtn">
+                        Записаться в WhatsApp
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="about">
+            <div class="about__container container">
+               <h2 class="about__title">О нас</h2>
+               <div class="about__box">
+                  <div class="about__text-box">
+                     <div class="about__img"><img src="./img/about/room1.jpg" alt="" /></div>
+                     <h3 class="about__sub-title">Продуманное пространство.</h3>
+                     <p class="about__text">Вам не захочется покидать наше уютное помещение.</p>
+                     <p class="about__text">А в зале есть вся необходимая аппаратура.</p>
+                  </div>
+                  <div class="about__text-box">
+                     <div class="about__img"><img src="./img/about/street2.jpg" alt="" /></div>
+                     <h3 class="about__sub-title">Работаем без выходных.</h3>
+                     Вы можете подобрать время и день для занятий или мероприятия под свой график.
+                  </div>
+                  <div class="about__text-box">
+                     <div class="about__img"><img src="./img/about/room3.jpg" alt="" /></div>
+                     <h3 class="about__sub-title">Практика выступлений.</h3>
+                     <p class="about__text">Регулярные отчётные концерты и квартирники.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="collab">
+            <div class="collab__container container">
+               <h2 class="collab__title">Сотрудничество</h2>
+
+               <p class="collab__intro">Арт-студия «ЕНОТЫ» примет в свои ряды преподавателей по:</p>
+
+               <ul class="collab__list">
+                  <li class="collab__item">вокалу</li>
+                  <li class="collab__item">гитаре</li>
+                  <li class="collab__item">фортепиано</li>
+                  <li class="collab__item">скрипке и другим музыкальным инструментам</li>
+                  <li class="collab__item">актёрскому мастерству и ораторскому искусству</li>
+               </ul>
+
+               <p class="collab__highlight">
+                  Ставка преподавателей высока как фа# второй октавы 🎶
+               </p>
+
+               <p class="collab__text">
+                  Друзья! Мы рады к взаимовыгодному сотрудничеству!
+                  <br />
+                  Если у вас есть идеи, каким образом можно использовать наше творческое
+                  пространство — мы всегда готовы их обсудить!
+               </p>
+            </div>
+         </section>
+
+         <section class="slider">
+            <div class="slider__item">
+               <img src="./img/slider/2.jpg" alt="" />
+               <div class="slider__item-textbox">
+                  <h2>ЕНОТЫ</h2>
+                  <p>комфортное пространство</p>
+               </div>
+            </div>
+            <div class="slider__item">
+               <img src="./img/slider/1.jpg" alt="" />
+               <div class="slider__item-textbox">
+                  <h2>ЕНОТЫ</h2>
+                  <p>необходимая аппаратура</p>
+               </div>
+            </div>
+            <div class="slider__item">
+               <img src="./img/slider/3.jpg" alt="" />
+               <div class="slider__item-textbox">
+                  <h2>ЕНОТЫ</h2>
+                  <p>творческая атмосфера</p>
+               </div>
+            </div>
+            <div class="slider__item">
+               <img src="./img/slider/4.jpg" alt="" />
+               <div class="slider__item-textbox">
+                  <h2>ЕНОТЫ</h2>
+                  <p>отличный звук</p>
+               </div>
+            </div>
+            <div class="slider__item">
+               <img src="./img/slider/5.jpg" alt="" />
+               <div class="slider__item-textbox">
+                  <h2>ЕНОТЫ</h2>
+                  <p>супер караоке</p>
+               </div>
+            </div>
+         </section>
+
+         <section class="gallery">
+            <div class="gallery__container container">
+               <h2 class="gallery__title">Творчество наших гостей, друзей, подписчиков</h2>
+               <!-- 1 -->
+               <div class="gallery__videos">
+                  <div class="gallery__video">
+                     <video class="gallery__player" controls preload="metadata" playsinline>
+                        <source src="" type="video/mp4" />
+                        <source src="" type="video/webm" />
+                     </video>
+                  </div>
+                  <!-- 2 -->
+                  <div class="gallery__video">
+                     <video class="gallery__player" controls preload="metadata" playsinline>
+                        <source src="" type="video/mp4" />
+                        <source src="" type="video/webm" />
+                     </video>
+                  </div>
+                  <!-- 3 -->
+                  <div class="gallery__video">
+                     <video class="gallery__player" controls preload="metadata" playsinline>
+                        <source src=" #" type="video/mp4" />
+                        <source src=" #" type="video/webm" />
+                     </video>
+                  </div>
+
+                  <!-- 4 -->
+                  <div class="gallery__video">
+                     <video class="gallery__player" controls preload="metadata" playsinline>
+                        <source src="  #" type="video/mp4" />
+                        <source src="  #" type="video/webm" />
+                     </video>
+                  </div>
+                  <!-- 5 -->
+                  <div class="gallery__video">
+                     <video class="gallery__player" controls preload="metadata" playsinline>
+                        <source src=" #" type="video/mp4" />
+                        <source src="  #" type="video/webm" />
+                     </video>
+                  </div>
+                  <!-- 6 -->
+                  <div class="gallery__video">
+                     <video class="gallery__player" controls preload="metadata" playsinline>
+                        <source src="  #" type="video/mp4" />
+                        <source src="  #" type="video/webm" />
+                     </video>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="rent">
+            <div class="rent__container container">
+               <h2 class="rent__title">Гибкие условия по аренде</h2>
+
+               <p class="rent__subtitle">
+                  Многофункционального музлофт-пространства для вашего мероприятия:
+               </p>
+
+               <ul class="rent__list">
+                  <li class="rent__item">Дни рождения</li>
+                  <li class="rent__item">Мастер-классы</li>
+                  <li class="rent__item">Лекции (тренинги, учебные занятия)</li>
+                  <li class="rent__item">Детские мероприятия</li>
+                  <li class="rent__item">Квартирники</li>
+                  <li class="rent__item">Выступления музыкантов (отчётные концерты)</li>
+                  <li class="rent__item">Стендапы</li>
+                  <li class="rent__item">Читальные вечера</li>
+                  <li class="rent__item">Запись видео и фото, киновечера</li>
+                  <li class="rent__item">Караоке</li>
+                  <li class="rent__item">Кабинет психолога</li>
+                  <li class="rent__item">Презентации</li>
+                  <li class="rent__item">Переговоры</li>
+                  <li class="rent__item">Встречи с друзьями и т.д.</li>
+               </ul>
+
+               <p class="rent__capacity">
+                  Вместимость — до 30 человек (в зависимости от формата мероприятия).
+               </p>
+
+               <p class="rent__features">
+                  В наличии: вся необходимая мебель (4 стола, стулья, 2 дивана, мягкая скамейка),
+                  техническое оборудование (проектор с караоке, колонки, комбоусилители, микрофоны и
+                  микшер), музыкальные инструменты (электронные барабаны, гитары, синтезатор,
+                  кахон), множество сценариев освещения, кондиционер и вентиляция.
+               </p>
+
+               <p class="rent__extras">
+                  Также есть приёмная с фотозоной, кухня (холодильник, чайник, микроволновая печь,
+                  фильтрованная питьевая вода) и санузел.
+               </p>
+
+               <div class="rent__prices">
+                  <p class="rent__price"><strong>Занятия и репетиции:</strong> от 500 ₽/час</p>
+                  <p class="rent__price"><strong>Форматные мероприятия:</strong> от 1500 ₽/час</p>
+               </div>
+            </div>
+         </section>
+
+         <section class="contacts">
+            <div class="contacts__container container">
+               <h2 class="contacts__title">Контакты</h2>
+
+               <div class="contacts__phones">
+                  <p class="contacts__phone"><a href="tel:+79035685184">+7 903 568 5184</a></p>
+                  <p class="contacts__phone"><a href="tel:+79603076587">+7 960 307 6587</a></p>
+                  <p class="contacts__address">Москва, Стромынка, д.11, р-н Сокольники</p>
+               </div>
+
+               <div class="contacts__socials">
+                  <p>
+                     Telegram-канал:
+                     <a href="https://t.me/enotygoo" target="_blank" class="contacts__link">
+                        https://t.me/enotygoo
+                     </a>
+                  </p>
+                  <p>
+                     Мы в VK:
+                     <a href="https://vk.com/enotygoo" target="_blank" class="contacts__link">
+                        https://vk.com/enotygoo
+                     </a>
+                  </p>
+               </div>
+            </div>
+         </section>
+         <section class="map">
+            <div class="container" style="position: relative; overflow: hidden">
+               <a
+                  href="https://yandex.kz/maps/org/art_studiya_yenoty/23935281271/?utm_medium=mapframe&utm_source=maps"
+                  style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+                  >Арт-студия Еноты</a
+               ><a
+                  href="https://yandex.kz/maps/213/moscow/category/courses_and_master_classes/184106220/?utm_medium=mapframe&utm_source=maps"
+                  style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+                  >Курсы и мастер-классы в Москве</a
+               ><a
+                  href="https://yandex.kz/maps/213/moscow/category/organization_of_events/184108329/?utm_medium=mapframe&utm_source=maps"
+                  style="color: #eee; font-size: 12px; position: absolute; top: 28px"
+                  >Организация мероприятий в Москве</a
+               ><iframe
+                  src="https://yandex.kz/map-widget/v1/?ll=37.692351%2C55.793948&mode=poi&poi%5Bpoint%5D=37.692239%2C55.794195&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D23935281271&z=19.56"
+                  width="100%"
+                  height="400"
+                  frameborder="1"
+                  allowfullscreen="true"
+                  style="position: relative"></iframe>
+            </div>
+         </section>
+
+         <footer class="footer">
+            <div class="footer__container container">
+               <!-- Название и краткое описание -->
+               <div class="footer__info">
+                  <h3 class="footer__title">Арт-студия «ЕНОТЫ»</h3>
+                  <p class="footer__desc">
+                     Пространство для творчества, вокала, событий и уютного времени с душой 🎤💜
+                  </p>
+               </div>
+
+               <!-- Быстрая навигация -->
+               <nav class="footer__nav">
+                  <ul class="footer__nav-list">
+                     <li class="footer__nav-item">
+                        <a href="#about" class="footer__nav-link">О нас</a>
+                     </li>
+                     <li class="footer__nav-item">
+                        <a href="#teachers" class="footer__nav-link">Преподаватели</a>
+                     </li>
+                     <li class="footer__nav-item">
+                        <a href="#gallery" class="footer__nav-link">Галерея</a>
+                     </li>
+                     <li class="footer__nav-item">
+                        <a href="#prices" class="footer__nav-link">Цены</a>
+                     </li>
+                     <li class="footer__nav-item">
+                        <a href="#contacts" class="footer__nav-link">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+
+               <!-- Контакты -->
+               <div class="footer__contacts">
+                  <p><a href="tel:+79035685184">+7-903-568-5184</a></p>
+                  <p><a href="tel:+79603076587">+7-960-30-6587</a></p>
+                  <p>
+                     <a href="https://t.me/enotygoo" target="_blank">Telegram</a> |
+                     <a href="https://vk.com/enotygoo" target="_blank">VK</a>
+                  </p>
+               </div>
+            </div>
+
+            <div class="footer__bottom">
+               <p class="footer__copyright">© ЕНОТЫ, 2025. Все права защищены.</p>
+            </div>
+         </footer>
+      </section>
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/slick.js"></script>
+   </body>
+</html>

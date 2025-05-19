@@ -1,0 +1,39 @@
+.footer {
+   background-color: #9eacf8;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__info {
+      max-width: 300px;
+   }
+
+   &__title {
+   }
+
+   &__desc {
+   }
+
+   &__nav {
+   }
+
+   &__nav-list {
+   }
+
+   &__nav-item {
+   }
+
+   &__nav-link {
+   }
+
+   &__contacts {
+   }
+
+   &__bottom {
+      text-align: center;
+   }
+
+   &__copyright {
+   }
+}

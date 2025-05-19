@@ -1,0 +1,49 @@
+.main {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   background-color: aqua;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+   }
+
+   &__title {
+      font-size: 50px;
+   }
+
+   &__title-sub-title {
+      font-size: 30px;
+      line-height: 30px;
+      max-width: 400px;
+   }
+
+   &__text-block {
+   }
+
+   &__text {
+   }
+
+   &__qr {
+      max-width: 200px;
+   }
+
+   &__qr-img {
+      width: 100%;
+   }
+
+   &__image {
+      width: 500px;
+      img {
+         width: 100%;
+      }
+   }
+
+   &__button {
+      margin-top: 50px;
+      display: inline-block;
+      background-color: rgb(250, 43, 43);
+      padding: 10px;
+   }
+}

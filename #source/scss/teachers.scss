@@ -1,0 +1,93 @@
+.teachers {
+   background-color: #d5d671;
+   &__container {
+   }
+
+   &__studio-title {
+      text-align: center;
+   }
+
+   &__subtitle {
+      text-align: center;
+   }
+   &__cards-block-1 {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__cards-block-2 {
+      display: flex;
+      justify-content: space-around;
+   }
+   &__cards {
+      // display: flex;
+      // justify-content: space-around;
+      // flex-wrap: wrap;
+   }
+
+   &__btn-prev {
+      display: inline-block;
+      background-color: rgb(43, 226, 58);
+      width: 100px;
+      height: 50px;
+      cursor: pointer;
+   }
+   &__btn-next {
+      display: inline-block;
+      background-color: rgb(43, 226, 58);
+      width: 200px;
+      height: 50px;
+      cursor: pointer;
+   }
+}
+
+.teacher-card {
+   &__card-info {
+      max-width: 350px;
+   }
+   &__image {
+      max-width: 350px;
+      height: 500px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__name {
+   }
+
+   &__intro {
+   }
+
+   &__experience {
+   }
+
+   &__text {
+   }
+
+   &__list {
+   }
+
+   &__item {
+   }
+
+   &__skills {
+   }
+
+   &__help {
+   }
+
+   &__specials {
+   }
+
+   &__list--inline {
+   }
+}
+
+.teacher-card:last-child {
+   margin-bottom: 0;
+}
+.close-teachers-block {
+   display: none;
+}

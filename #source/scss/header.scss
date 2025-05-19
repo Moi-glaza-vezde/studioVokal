@@ -1,0 +1,59 @@
+.header {
+   background-color: #975ca2;
+   padding: 20px 0;
+   &__address {
+      text-align: center;
+   }
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      width: 100px;
+      border-radius: 50%;
+
+      img {
+         width: 100%;
+         border-radius: 50%;
+      }
+   }
+
+   &__nav {
+   }
+
+   &__nav-list {
+      display: flex;
+      gap: 40px;
+   }
+
+   &__nav-item {
+   }
+
+   &__nav-link {
+      font-size: 20px;
+   }
+
+   &__contacts {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+   }
+
+   &__phone {
+   }
+
+   &__telegram {
+      background-color: #5febf0;
+      padding: 5px;
+      border-radius: 20px;
+   }
+
+   &__call-btn {
+      background-color: black;
+      padding: 5px;
+      border-radius: 20px;
+      color: #ffff;
+   }
+}
