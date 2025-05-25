@@ -14,9 +14,13 @@ const teachersBtnNext = document.querySelector('#teachersBtnNext');
 teachersBtnNext.addEventListener('click', () => {
    teachersCardsBlock1.classList.add('close-teachers-block');
    teachersCardsBlock2.classList.remove('close-teachers-block');
+   teachersBtnNext.style.display = 'none';
+   teachersBtnPrev.style.display = 'block';
 });
 teachersBtnPrev.addEventListener('click', () => {
    teachersCardsBlock2.classList.add('close-teachers-block');
 
    teachersCardsBlock1.classList.remove('close-teachers-block');
+   teachersBtnNext.style.display = 'block';
+   teachersBtnPrev.style.display = 'none';
 });

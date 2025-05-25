@@ -139,7 +139,7 @@ body {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
   .teachers__btn-prev {
-    display: inline-block;
+    display: none;
     background-color: #2be23a;
     width: 100px;
     height: 50px;
