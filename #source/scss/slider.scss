@@ -2,7 +2,7 @@
    @media (max-width: 578px) {
       padding: 25px 10px;
    }
-   background-color: #eb96f7;
+   background-color: $color-bg;
    position: relative;
    padding: 50px 10px;
    max-width: 100%;
@@ -60,6 +60,7 @@
       width: 100%;
       filter: brightness(0.6);
       height: 95vh;
+      object-fit: cover;
    }
 }
 .slider__item-textbox {
@@ -74,7 +75,7 @@
    }
    border-radius: 5px;
    padding: 10px;
-   background-color: #3500d34f;
+   background-color: #804b8a8f;
    //background-color: #030303;
    position: absolute;
    top: 65%;

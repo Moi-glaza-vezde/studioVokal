@@ -1,20 +1,32 @@
+@import '_media';
+
 .teachers {
-   background-color: #d5d671;
+   background-color: $color-bg;
+
    &__container {
+      padding: 50px 0;
    }
 
    &__studio-title {
       text-align: center;
+      color: $color-primary;
+      font-size: $font-size-xxl;
+      font-weight: $font-weight-bold;
    }
 
    &__subtitle {
       text-align: center;
+      font-size: $font-size-xl;
+      color: $font-color-main;
    }
    &__cards-block-1 {
+      margin-top: 20px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
    }
    &__cards-block-2 {
+      margin-top: 20px;
       display: flex;
       justify-content: space-around;
    }
@@ -22,66 +34,104 @@
       // display: flex;
       // justify-content: space-around;
       // flex-wrap: wrap;
+      padding: 40px 0;
+      margin-bottom: 30px;
    }
 
    &__btn-prev {
       display: none;
-      background-color: rgb(43, 226, 58);
-      width: 100px;
-      height: 50px;
+      gap: 15px;
+      font-size: $font-size-lg2;
+      text-decoration: underline dashed;
+      text-underline-offset: 10px;
+      color: $color-primary;
+      align-items: center;
       cursor: pointer;
+      img {
+         width: 50px;
+      }
    }
    &__btn-next {
-      display: inline-block;
-      background-color: rgb(43, 226, 58);
-      width: 200px;
-      height: 50px;
+      display: flex;
+
+      gap: 15px;
+      font-size: $font-size-lg2;
+
+      color: $color-primary;
+      text-decoration: underline dashed;
+      text-underline-offset: 10px;
+      align-items: center;
       cursor: pointer;
+      img {
+         width: 50px;
+      }
    }
 }
 
 .teacher-card {
-   &__card-info {
-      max-width: 350px;
-   }
+   background-color: $color-primary;
+   border-radius: 20px;
+   box-shadow: 0 0 8px 0 #814b8a, 0 0 16px 2px rgba(129, 75, 138, 0.35);
+   max-width: 400px;
    &__image {
-      max-width: 350px;
+      max-width: 400px;
       height: 500px;
+      padding: 3px;
       img {
+         border-radius: 20px;
+
          width: 100%;
          height: 100%;
          object-fit: cover;
       }
    }
-
+   &__card-info {
+      padding: 20px 10px;
+      color: $font-color-main;
+      font-weight: $font-weight-semi-bold;
+      max-width: 350px;
+   }
    &__name {
+      text-align: center;
+      font-size: $font-size-xl;
+      margin: 10px 0;
+      color: $font-color-main;
    }
 
    &__intro {
+      margin-top: 10px;
    }
 
    &__experience {
+      margin-top: 10px;
    }
 
    &__text {
+      margin-top: 10px;
    }
 
    &__list {
+      margin-top: 10px;
    }
 
    &__item {
+      margin-top: 10px;
    }
 
    &__skills {
+      margin-top: 10px;
    }
 
    &__help {
+      margin-top: 10px;
    }
 
    &__specials {
+      margin-top: 10px;
    }
 
    &__list--inline {
+      margin-top: 10px;
    }
 }
 

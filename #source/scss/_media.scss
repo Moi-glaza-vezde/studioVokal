@@ -1,0 +1,32 @@
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 600px;
+$breakpoint-mobile-sm: 480px;
+
+// Размеры шрифта
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-lg2: 25px;
+$font-size-xl: 30px;
+$font-size-semi-xl: 40px;
+$font-size-xxl: 50px;
+
+// Цвета
+// $color-primary: #975ca2;
+$color-primary: #814b8a;
+$color-secondary: #e91e63;
+$color-bg: #080808;
+$color-accent-light: #fcaf3b;
+// Цвета шрифтов
+$font-color-main: #e5e6e7; // основной цвет текста
+$font-color-secondary: #555555; // второстепенный текст
+$font-color-link: #000000; // цвет ссылок
+$font-color-invert: #ffffff; // белый для темного фона
+$font-color-accent: #e91e63; // акцент для выделения
+
+// Толщина шрифта
+
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;

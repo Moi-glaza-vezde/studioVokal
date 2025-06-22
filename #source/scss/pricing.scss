@@ -1,13 +1,20 @@
 .pricing {
-   padding: 10px 0;
-   background-color: #be69cf;
+   padding: 50px 0;
+   background-color: $color-primary;
+   background-color: $color-bg;
    &__container {
    }
 
    &__title {
+      color: $font-color-main;
+      color: $font-color-invert;
+      text-align: center;
+      font-size: $font-size-xxl;
+      font-size: $font-weight-bold;
    }
 
    &__cards {
+      margin: 30px 0;
       display: flex;
       justify-content: center;
       gap: 20px;
@@ -16,20 +23,50 @@
 
    &__card {
       width: 250px;
-      height: 300px;
-      background-color: #e6e6e6;
+      height: 400px;
+      padding: 10px 5px;
+
+      color: $font-color-invert;
+      background-color: $color-bg;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid $font-color-invert;
+      border-radius: 20px;
+
+      box-shadow: 0 0 4px #fcaf3b, 0 0 8px #ffd76d, 0 0 12px #ffad00, 0 0 16px #fcaf3b;
    }
 
    &__card-title {
+      margin: 15px 0px;
+      font-size: $font-size-lg2;
+      line-height: 27px;
    }
 
    &__card-price {
+      margin: 15px 0px;
+      font-size: $font-size-lg2;
    }
 
    &__card-note {
+      margin: 15px 0px;
+      font-size: $font-size-lg;
+      flex: 1;
    }
 
    &__card-button {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: $font-size-md;
+      color: $font-color-invert;
+      font-weight: $font-weight-semi-bold;
+      background-color: $color-accent-light;
+      line-height: 20px;
+      border-radius: 10px;
+      border: 2px solid $font-color-invert;
    }
 }

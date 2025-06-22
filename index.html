@@ -14,7 +14,6 @@
    <body>
       <section class="wrapper">
          <header class="header">
-            <p class="header__address">Москва, Стромынка, д.11, р-н Сокольники</p>
             <div class="header__container container">
                <!-- Логотип -->
                <div class="header__logo">
@@ -28,10 +27,10 @@
                         <a href="#about" class="header__nav-link">О нас</a>
                      </li>
                      <li class="header__nav-item">
-                        <a href="#program" class="header__nav-link">Aренда</a>
+                        <a href="#program" class="header__nav-link">Уроки вокала/музыки</a>
                      </li>
                      <li class="header__nav-item">
-                        <a href="#reviews" class="header__nav-link">Творчество</a>
+                        <a href="#rent" class="header__nav-link">Аренда</a>
                      </li>
                      <li class="header__nav-item">
                         <a href="#prices" class="header__nav-link">Цены</a>
@@ -44,8 +43,10 @@
 
                <!-- Контакты -->
                <div class="header__contacts">
-                  <a href="tel:+71234567890" class="header__phone">+7 (123) 456-78-90</a>
-                  <a href="https://t.me/yourgroup" target="_blank" class="header__telegram">TG </a>
+                  <!-- <a href="tel:+71234567890" class="header__phone">+7 (123) 456-78-90</a> -->
+                  <a href="https://t.me/yourgroup" target="_blank" class="header__telegram">
+                     <img src="./img/icons/tgIcon.png" alt="Иконка телеграма" />
+                  </a>
 
                   <button class="header__call-btn">Позвонить</button>
                </div>
@@ -72,6 +73,7 @@
                      </p>
                      <p class="main__text">Стань частью нашего дружного сообщества.</p>
                   </div>
+
                   <!-- QR-код -->
                   <div class="main__qr">
                      <img src="./img/main/qr.jpg" alt="QR код чата" class="main__qr-img" />
@@ -84,6 +86,13 @@
                <!-- Фото -->
                <div class="main__image">
                   <img src="./img/main/2.png" alt="Уроки вокала" />
+                  <div class="main__address">
+                     <span class="main__address-text">
+                        Москва, Стромынка, д.11, р-н Сокольники</span
+                     >
+
+                     <a href="tel:+71234567890" class="main__phone">+7 (123) 456-78-90</a>
+                  </div>
                </div>
             </div>
          </main>
@@ -91,7 +100,9 @@
          <section id="teachers" class="teachers">
             <div class="teachers__container container">
                <!-- Первый заголовок -->
-               <h2 class="teachers__studio-title">В студии "Еноты" ты запоешь по полной</h2>
+               <h2 id="program" class="teachers__studio-title">
+                  В студии "Еноты" ты запоешь по полной
+               </h2>
 
                <!-- Второй заголовок -->
                <h3 class="teachers__subtitle">По любимому направлению</h3>
@@ -159,24 +170,24 @@
                                     Спеть любимые треки, изучить сложные приёмы, улучшить технику,
                                     добавить уверенности
                                  </li>
-                                 <li class="teacher-card__item">Просто поднять настроение 😊</li>
+                                 <li class="teacher-card__item">Просто поднять настроение</li>
                               </ul>
                            </div>
 
                            <div class="teacher-card__specials">
                               <ul class="teacher-card__list teacher-card__list--inline">
-                                 <li class="teacher-card__item">Постановка дыхания — ✅</li>
+                                 <li class="teacher-card__item">Постановка дыхания</li>
                                  <li class="teacher-card__item">
-                                    Обучение с нуля и продвинутый уровень — ✅
+                                    Обучение с нуля и продвинутый уровень
                                  </li>
                                  <li class="teacher-card__item">
                                     Эстрадные техники: Субтон, Микст, Бэлт, Краинг, Фальцет,
-                                    Свисток, Рэттл — ✅
+                                    Свисток, Рэттл
                                  </li>
-                                 <li class="teacher-card__item">Мелизмы, йодли, вибрато — ✅</li>
+                                 <li class="teacher-card__item">Мелизмы, йодли, вибрато</li>
                                  <li class="teacher-card__item">
                                     Экстрим-приёмы: Фрай (штробасс), Компрессия, Драйв, Харш, Скрим,
-                                    Гроул — ✅
+                                    Гроул
                                  </li>
                               </ul>
                            </div>
@@ -189,9 +200,7 @@
                            <img src="./img/teachers/i.jpg" alt="Эдита" />
                         </div>
                         <div class="teacher-card__card-info">
-                           <h3 class="teacher-card__name">
-                              Ирина <span class="teacher-card__handle">@IrMaa98</span>
-                           </h3>
+                           <h3 class="teacher-card__name">Ирина</h3>
                            <p class="teacher-card__intro">
                               Преподаватель по вокалу для начинающих.
                            </p>
@@ -243,15 +252,14 @@
                               </p>
                               <ul class="teacher-card__list">
                                  <li class="teacher-card__item">
-                                    📍 Как убрать телесные зажимы во время пения (особенно на
-                                    верхних нотах)
+                                    Как убрать телесные зажимы во время пения (особенно на верхних
+                                    нотах)
                                  </li>
                                  <li class="teacher-card__item">
-                                    📍 Как сделать так, чтобы «хватало дыхания» во время длинных
-                                    фраз
+                                    Как сделать так, чтобы «хватало дыхания» во время длинных фраз
                                  </li>
-                                 <li class="teacher-card__item">📍 Как чётко попадать в ноты</li>
-                                 <li class="teacher-card__item">📍 Как держать опору</li>
+                                 <li class="teacher-card__item">Как чётко попадать в ноты</li>
+                                 <li class="teacher-card__item">Как держать опору</li>
                               </ul>
                            </div>
                         </div>
@@ -263,7 +271,7 @@
                            <img src="./img/teachers/a.jpg" alt="Имя преподавателя" />
                         </div>
                         <div class="teacher-card__card-info">
-                           <h3 class="teacher-card__name">Ервандян Эдита 🤍</h3>
+                           <h3 class="teacher-card__name">Ервандян Эдита</h3>
 
                            <div class="teacher-card__experience">
                               <p class="teacher-card__text">Немного обо мне:</p>
@@ -318,13 +326,13 @@
                               <p class="teacher-card__text">На занятиях со мной ты получишь:</p>
                               <ul class="teacher-card__list">
                                  <li class="teacher-card__item">
-                                    • умение разбираться в анатомии своего голоса
+                                    умение разбираться в анатомии своего голоса
                                  </li>
                                  <li class="teacher-card__item">
-                                    • упражнения, подобранные под твои точки роста
+                                    упражнения, подобранные под твои точки роста
                                  </li>
                                  <li class="teacher-card__item">
-                                    • подробный разбор каждой песни — вместе, до мелочей
+                                    подробный разбор каждой песни — вместе, до мелочей
                                  </li>
                               </ul>
                            </div>
@@ -421,33 +429,33 @@
                            </p>
 
                            <div class="teacher-card__help">
-                              <p class="teacher-card__text">🎙️ Если вы хотите:</p>
+                              <p class="teacher-card__text">Если вы хотите:</p>
                               <ul class="teacher-card__list">
                                  <li class="teacher-card__item">
-                                    🥳 Петь ярко, красиво, эмоционально и уверенно
+                                    Петь ярко, красиво, эмоционально и уверенно
                                  </li>
-                                 <li class="teacher-card__item">🔥 Найти свою манеру исполнения</li>
+                                 <li class="teacher-card__item">Найти свою манеру исполнения</li>
                                  <li class="teacher-card__item">
-                                    💣 Освоить вокальные приёмы (твенг, фрай, фальцет, бэлтинг)
+                                    Освоить вокальные приёмы (твенг, фрай, фальцет, бэлтинг)
                                  </li>
-                                 <li class="teacher-card__item">⚡ Избавиться от напряжения</li>
+                                 <li class="teacher-card__item">Избавиться от напряжения</li>
                                  <li class="teacher-card__item">
                                     🎶 Достать высокие и низкие ноты
                                  </li>
                                  <li class="teacher-card__item">
-                                    🌟 Почувствовать мощь и разнообразие своего голоса
+                                    Почувствовать мощь и разнообразие своего голоса
                                  </li>
                               </ul>
                            </div>
 
                            <div class="teacher-card__skills">
                               <p class="teacher-card__text">
-                                 🎹 На занятиях мы разберём особенности вашего звучания и уберём
-                                 всё, что мешает петь свободно.
+                                 На занятиях мы разберём особенности вашего звучания и уберём всё,
+                                 что мешает петь свободно.
                               </p>
                               <p class="teacher-card__text">
-                                 😎 Вы освоите современные вокальности, поймёте, как они
-                                 формируются, научитесь петь мелизмы и многое другое.
+                                 Вы освоите современные вокальности, поймёте, как они формируются,
+                                 научитесь петь мелизмы и многое другое.
                               </p>
                               <p class="teacher-card__text">
                                  🎶 Подберём интересный репертуар — вы будете петь то, что нравится
@@ -457,7 +465,7 @@
 
                            <div class="teacher-card__experience">
                               <p class="teacher-card__text">
-                                 💣 Ко мне обращаются как студенты вокальных вузов, так и новички. Я
+                                 Ко мне обращаются как студенты вокальных вузов, так и новички. Я
                                  помогаю готовиться к международным конкурсам, работать над
                                  авторским репертуаром, мюзиклами, и даже выпускать собственные
                                  песни.
@@ -467,7 +475,7 @@
                                  др.), и на их основе разработала свою собственную систему.
                               </p>
                               <p class="teacher-card__text">
-                                 🔥 Среди моих учеников: Mika Vino, Julia Milows, Феликс Салий (для
+                                 Среди моих учеников: Mika Vino, Julia Milows, Феликс Салий (для
                                  него я написала песню "Красноречие"), Зульфия Выдумкина (2 место —
                                  конкурс "Мастер Мюзикла"), Алексей Земсков (2 место — конкурс
                                  Imusio).
@@ -478,7 +486,7 @@
                               <p>
                                  Я уверена, что хорошо петь можно научить любого — главное, это
                                  совместная работа в доброжелательной, весёлой атмосфере. Ведь вокал
-                                 — это место, где вы развиваетесь с удовольствием! 🎤✨
+                                 — это место, где вы развиваетесь с удовольствием!
                               </p>
                            </div>
                         </div>
@@ -533,7 +541,7 @@
                                  </li>
                               </ul>
                               <p class="teacher-card__text">
-                                 Эти навыки останутся с тобой навсегда 💬✨
+                                 Эти навыки останутся с тобой навсегда
                               </p>
                            </div>
                         </div>
@@ -541,17 +549,22 @@
                   </div>
                   <!-- Добавляешь столько карточек, сколько нужно -->
                </div>
-
-               <a id="teachersBtnPrev" class="teachers__btn-prev" href="#teachers">назад</a>
-
-               <a id="teachersBtnNext" class="teachers__btn-next" href="#teachers"
-                  >еще преподователи</a
-               >
+               <div>
+                  <a id="teachersBtnPrev" class="teachers__btn-prev" href="#teachers"
+                     ><img src="./img/icons/arrowLeft.png" alt="" /> назад
+                  </a>
+               </div>
+               <div>
+                  <a id="teachersBtnNext" class="teachers__btn-next" href="#teachers"
+                     >еще преподователи <img src="./img/icons/arrowRight.png" alt=""
+                  /></a>
+               </div>
             </div>
          </section>
+
          <section class="pricing">
             <div class="pricing__container container">
-               <h2 class="pricing__title">Цены на занятия</h2>
+               <h2 id="prices" class="pricing__title">Цены на занятия</h2>
 
                <div class="pricing__cards">
                   <!-- Карточка 1 -->
@@ -597,7 +610,7 @@
                   <div class="pricing__card">
                      <h3 class="pricing__card-title">Пробное занятие</h3>
                      <p class="pricing__card-price">Индивидуальное — 1800 ₽ / 50 мин</p>
-                     <p class="pricing__card-price">Групповое — 1000 ₽ / 1.5 часа</p>
+                     <p class="pricing__card-note">Групповое — 1000 ₽ / 1.5 часа</p>
                      <a
                         href="https://wa.me/71234567890"
                         target="_blank"
@@ -611,7 +624,7 @@
 
          <section class="about">
             <div class="about__container container">
-               <h2 class="about__title">О нас</h2>
+               <h2 id="about" class="about__title">О нас</h2>
                <div class="about__box">
                   <div class="about__text-box">
                      <div class="about__img"><img src="./img/about/room1.jpg" alt="" /></div>
@@ -622,7 +635,10 @@
                   <div class="about__text-box">
                      <div class="about__img"><img src="./img/about/street2.jpg" alt="" /></div>
                      <h3 class="about__sub-title">Работаем без выходных.</h3>
-                     Вы можете подобрать время и день для занятий или мероприятия под свой график.
+                     <p class="about__text">
+                        Вы можете подобрать время и день для занятий или мероприятия под свой
+                        график.
+                     </p>
                   </div>
                   <div class="about__text-box">
                      <div class="about__img"><img src="./img/about/room3.jpg" alt="" /></div>
@@ -635,20 +651,28 @@
 
          <section class="collab">
             <div class="collab__container container">
+               <div class="collab__main-img"><img src="./img/main/note.png" alt="ноты" /></div>
                <h2 class="collab__title">Сотрудничество</h2>
 
                <p class="collab__intro">Арт-студия «ЕНОТЫ» примет в свои ряды преподавателей по:</p>
 
                <ul class="collab__list">
-                  <li class="collab__item">вокалу</li>
-                  <li class="collab__item">гитаре</li>
-                  <li class="collab__item">фортепиано</li>
-                  <li class="collab__item">скрипке и другим музыкальным инструментам</li>
-                  <li class="collab__item">актёрскому мастерству и ораторскому искусству</li>
+                  <li class="collab__item"><span class="collab__note">&#9834;</span> вокалу</li>
+                  <li class="collab__item"><span class="collab__note">&#9834;</span> гитаре</li>
+                  <li class="collab__item"><span class="collab__note">&#9834;</span> фортепиано</li>
+                  <li class="collab__item">
+                     <span class="collab__note">&#9834;</span> скрипке и другим музыкальным
+                     инструментам
+                  </li>
+                  <li class="collab__item">
+                     <span class="collab__note">&#9834;</span> актёрскому мастерству и ораторскому
+                     искусству
+                  </li>
                </ul>
 
                <p class="collab__highlight">
-                  Ставка преподавателей высока как фа# второй октавы 🎶
+                  Ставка преподавателей высока как фа# второй октавы
+                  <span class="collab__note">&#9835;</span>
                </p>
 
                <p class="collab__text">
@@ -662,14 +686,14 @@
 
          <section class="slider">
             <div class="slider__item">
-               <img src="./img/slider/2.jpg" alt="" />
+               <img src="./img/slider/1.jpg" alt="" />
                <div class="slider__item-textbox">
                   <h2>ЕНОТЫ</h2>
                   <p>комфортное пространство</p>
                </div>
             </div>
             <div class="slider__item">
-               <img src="./img/slider/1.jpg" alt="" />
+               <img src="./img/slider/2.jpg" alt="" />
                <div class="slider__item-textbox">
                   <h2>ЕНОТЫ</h2>
                   <p>необходимая аппаратура</p>
@@ -693,57 +717,69 @@
                <img src="./img/slider/5.jpg" alt="" />
                <div class="slider__item-textbox">
                   <h2>ЕНОТЫ</h2>
-                  <p>супер караоке</p>
+                  <p>dream team</p>
                </div>
             </div>
          </section>
 
          <section class="gallery">
             <div class="gallery__container container">
-               <h2 class="gallery__title">Творчество наших гостей, друзей, подписчиков</h2>
-               <!-- 1 -->
-               <div class="gallery__videos">
-                  <div class="gallery__video">
-                     <video class="gallery__player" controls preload="metadata" playsinline>
-                        <source src="" type="video/mp4" />
-                        <source src="" type="video/webm" />
-                     </video>
+               <h2 class="gallery__title">Медиа жизнь студии</h2>
+
+               <div class="gallery__box">
+                  <!-- 1 -->
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g1.JPG" alt="Картинка медиа жизни" />
+                     </div>
                   </div>
                   <!-- 2 -->
-                  <div class="gallery__video">
-                     <video class="gallery__player" controls preload="metadata" playsinline>
-                        <source src="" type="video/mp4" />
-                        <source src="" type="video/webm" />
-                     </video>
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g2.JPG" alt="Картинка медиа жизни" />
+                     </div>
                   </div>
                   <!-- 3 -->
-                  <div class="gallery__video">
-                     <video class="gallery__player" controls preload="metadata" playsinline>
-                        <source src=" #" type="video/mp4" />
-                        <source src=" #" type="video/webm" />
-                     </video>
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g3.JPG" alt="Картинка медиа жизни" />
+                     </div>
                   </div>
-
                   <!-- 4 -->
-                  <div class="gallery__video">
-                     <video class="gallery__player" controls preload="metadata" playsinline>
-                        <source src="  #" type="video/mp4" />
-                        <source src="  #" type="video/webm" />
-                     </video>
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g4.JPG" alt="Картинка медиа жизни" />
+                     </div>
                   </div>
                   <!-- 5 -->
-                  <div class="gallery__video">
-                     <video class="gallery__player" controls preload="metadata" playsinline>
-                        <source src=" #" type="video/mp4" />
-                        <source src="  #" type="video/webm" />
-                     </video>
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g5.JPG" alt="Картинка медиа жизни" />
+                     </div>
                   </div>
                   <!-- 6 -->
-                  <div class="gallery__video">
-                     <video class="gallery__player" controls preload="metadata" playsinline>
-                        <source src="  #" type="video/mp4" />
-                        <source src="  #" type="video/webm" />
-                     </video>
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g6.JPG" alt="Картинка медиа жизни" />
+                     </div>
+                  </div>
+                  <!-- 7 -->
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g7.JPG" alt="Картинка медиа жизни" />
+                     </div>
+                  </div>
+                  <!-- 8 -->
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g8.JPG" alt="Картинка медиа жизни" />
+                     </div>
+                  </div>
+                  <!-- 9 -->
+                  <div class="gallery__item">
+                     <div class="gallery__img">
+                        <img src="./img/gallery/g9.JPG" alt="Картинка медиа жизни" />
+                     </div>
                   </div>
                </div>
             </div>
@@ -751,7 +787,7 @@
 
          <section class="rent">
             <div class="rent__container container">
-               <h2 class="rent__title">Гибкие условия по аренде</h2>
+               <h2 id="rent" class="rent__title">Гибкие условия по аренде</h2>
 
                <p class="rent__subtitle">
                   Многофункционального музлофт-пространства для вашего мероприятия:
@@ -799,7 +835,7 @@
 
          <section class="contacts">
             <div class="contacts__container container">
-               <h2 class="contacts__title">Контакты</h2>
+               <h2 id="contacts" class="contacts__title">Контакты</h2>
 
                <div class="contacts__phones">
                   <p class="contacts__phone"><a href="tel:+79035685184">+7 903 568 5184</a></p>
@@ -853,7 +889,7 @@
                <div class="footer__info">
                   <h3 class="footer__title">Арт-студия «ЕНОТЫ»</h3>
                   <p class="footer__desc">
-                     Пространство для творчества, вокала, событий и уютного времени с душой 🎤💜
+                     Пространство для творчества, вокала, событий и уютного времени с душой
                   </p>
                </div>
 
@@ -867,7 +903,7 @@
                         <a href="#teachers" class="footer__nav-link">Преподаватели</a>
                      </li>
                      <li class="footer__nav-item">
-                        <a href="#gallery" class="footer__nav-link">Галерея</a>
+                        <a href="#rent" class="footer__nav-link">Аренда</a>
                      </li>
                      <li class="footer__nav-item">
                         <a href="#prices" class="footer__nav-link">Цены</a>
@@ -889,9 +925,9 @@
                </div>
             </div>
 
-            <div class="footer__bottom">
+            <!-- <div class="footer__bottom">
                <p class="footer__copyright">© ЕНОТЫ, 2025. Все права защищены.</p>
-            </div>
+            </div> -->
          </footer>
       </section>
 

@@ -1,20 +1,31 @@
 .contacts {
-   background-color: rgb(180, 140, 182);
+   padding: 50px 0px;
+   background-color: $color-bg;
    &__container {
+      color: $font-color-invert;
+      text-align: center;
    }
 
    &__title {
+      font-size: $font-size-xxl;
+      font-weight: $font-weight-bold;
    }
 
    &__phones {
+      margin-top: 10px;
+      font-size: $font-size-lg2;
    }
 
    &__phone {
    }
 
    &__socials {
+      margin-top: 10px;
+      font-size: $font-size-lg2;
    }
 
    &__link {
+      margin-top: 10px;
+      font-size: $font-size-lg2;
    }
 }

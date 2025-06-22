@@ -1,9 +1,8 @@
+@import './media';
+
 .header {
-   background-color: #975ca2;
-   padding: 20px 0;
-   &__address {
-      text-align: center;
-   }
+   background-color: $color-primary;
+
    &__container {
       display: flex;
       align-items: center;
@@ -11,12 +10,11 @@
    }
 
    &__logo {
-      width: 100px;
-      border-radius: 50%;
+      width: 150px;
+      padding: 5px 0;
 
       img {
          width: 100%;
-         border-radius: 50%;
       }
    }
 
@@ -25,35 +23,39 @@
 
    &__nav-list {
       display: flex;
+      justify-content: center;
       gap: 40px;
+      font-size: $font-size-md;
+      font-weight: $font-weight-semi-bold;
+      color: $font-color-main;
    }
 
    &__nav-item {
    }
 
-   &__nav-link {
-      font-size: 20px;
-   }
-
    &__contacts {
       display: flex;
-      gap: 10px;
+      gap: 20px;
       align-items: center;
    }
 
-   &__phone {
-   }
-
    &__telegram {
-      background-color: #5febf0;
-      padding: 5px;
-      border-radius: 20px;
+      width: 40px;
+
+      img {
+         width: 100%;
+      }
    }
 
    &__call-btn {
-      background-color: black;
-      padding: 5px;
-      border-radius: 20px;
-      color: #ffff;
+      font-size: $font-size-lg;
+      color: $font-color-main;
+
+      background-color: $color-bg;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 2px solid $font-color-main;
+
+      cursor: pointer;
    }
 }

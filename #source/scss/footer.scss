@@ -1,8 +1,10 @@
 .footer {
-   background-color: #9eacf8;
+   padding: 30px 0px 0 0;
+   background-color: $color-primary;
    &__container {
       display: flex;
       justify-content: space-between;
+      color: $font-color-invert;
    }
 
    &__info {
@@ -10,6 +12,7 @@
    }
 
    &__title {
+      font-size: $font-size-lg2;
    }
 
    &__desc {
@@ -22,12 +25,16 @@
    }
 
    &__nav-item {
+      margin: 5px 0px;
    }
 
    &__nav-link {
    }
 
    &__contacts {
+      p {
+         margin: 5px;
+      }
    }
 
    &__bottom {
