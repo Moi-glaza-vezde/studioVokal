@@ -956,7 +956,7 @@ body {
   margin-top: 50px;
   position: relative;
   background-color: #080808;
-  max-height: 100vh;
+  max-height: 85vh;
   overflow: auto; }
   .gallery__title {
     padding-bottom: 20px;
