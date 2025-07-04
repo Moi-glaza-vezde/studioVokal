@@ -1,0 +1,29 @@
+.events {
+   &__container {
+   }
+
+   &__title {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-xl;
+      }
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-lg;
+      }
+      color: $font-color-invert;
+      font-size: $font-size-semi-xl;
+      text-decoration: underline dashed;
+      text-underline-offset: 15px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+         @media (max-width: $breakpoint-tablet) {
+            width: 30px;
+         }
+         width: 40px;
+      }
+   }
+}

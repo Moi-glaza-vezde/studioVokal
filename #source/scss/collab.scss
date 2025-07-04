@@ -11,15 +11,39 @@
       }
    }
    &__title {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-semi-xl;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
       color: $font-color-main;
       font-size: $font-size-xxl;
       text-align: center;
       font-weight: $font-weight-bold;
+      border-radius: 10px;
+      border: 1px solid $color-primary;
+      box-shadow: 0 0 8px 0 #814b8a, 0 0 16px 2px rgba(129, 75, 138, 0.35);
+      padding: 10px 0;
+      max-width: 600px;
+      margin: 0 auto;
    }
 
    &__intro {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-xl;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-lg;
+      }
       text-align: center;
       font-size: $font-size-xl;
+      margin-top: 30px;
    }
 
    &__list {
@@ -31,17 +55,47 @@
       font-size: $font-size-lg2;
    }
    &__item {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-lg2;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg;
+      }
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       font-size: $font-size-lg;
       text-transform: uppercase;
    }
 
    &__highlight {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-lg2;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg;
+      }
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       text-align: center;
       margin: 15px 0;
       font-size: $font-size-xl;
    }
 
    &__text {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-lg2;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg;
+      }
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       text-align: center;
       font-size: $font-size-lg2;
    }

@@ -4,28 +4,56 @@
    background-color: $color-bg;
 
    &__container {
-      padding: 50px 0;
+      padding: 50px 10px;
    }
 
    &__studio-title {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-semi-xl;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
+
       text-align: center;
       color: $color-primary;
       font-size: $font-size-xxl;
       font-weight: $font-weight-bold;
+      box-shadow: 0 0 8px 0 #ffffff, 0 0 16px 2px #e5e6e72e;
+      border-radius: 10px;
+      border: 1px solid #ffff;
+      padding: 10px 0;
    }
 
    &__subtitle {
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
       text-align: center;
       font-size: $font-size-xl;
       color: $font-color-main;
+      margin-top: 10px;
    }
    &__cards-block-1 {
+      @media (max-width: $breakpoint-tablet) {
+         justify-content: center;
+      }
       margin-top: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
    }
    &__cards-block-2 {
+      @media (max-width: $breakpoint-tablet) {
+         justify-content: center;
+         margin-top: 20px;
+         display: flex;
+         flex-wrap: wrap;
+      }
       margin-top: 20px;
       display: flex;
       justify-content: space-around;
@@ -39,6 +67,10 @@
    }
 
    &__btn-prev {
+      @media (max-width: $breakpoint-mobile) {
+         justify-content: center;
+         font-size: $font-size-lg;
+      }
       display: none;
       gap: 15px;
       font-size: $font-size-lg2;
@@ -47,11 +79,21 @@
       color: $color-primary;
       align-items: center;
       cursor: pointer;
+      transition: transform 0.5s cubic-bezier(0.45, 0.1, 0.15, 1);
+
       img {
          width: 50px;
       }
+
+      &:hover {
+         transform: translateX(-20px);
+      }
    }
    &__btn-next {
+      @media (max-width: $breakpoint-mobile) {
+         justify-content: center;
+         font-size: $font-size-lg;
+      }
       display: flex;
 
       gap: 15px;
@@ -62,18 +104,34 @@
       text-underline-offset: 10px;
       align-items: center;
       cursor: pointer;
+      transition: transform 0.5s cubic-bezier(0.45, 0.1, 0.15, 1);
+
       img {
          width: 50px;
+      }
+      &:hover {
+         transform: translateX(20px);
       }
    }
 }
 
 .teacher-card {
+   @media (max-width: $breakpoint-tablet) {
+      max-width: 400px;
+      height: 700px;
+      padding-bottom: 20px;
+      overflow: hidden;
+   }
    background-color: $color-primary;
    border-radius: 20px;
    box-shadow: 0 0 8px 0 #814b8a, 0 0 16px 2px rgba(129, 75, 138, 0.35);
-   max-width: 400px;
+   max-width: 33%;
+   margin-bottom: 20px;
+
    &__image {
+      @media (max-width: $breakpoint-tablet) {
+         height: 400px;
+      }
       max-width: 400px;
       height: 500px;
       padding: 3px;
@@ -86,10 +144,15 @@
       }
    }
    &__card-info {
-      padding: 20px 10px;
+      @media (max-width: $breakpoint-tablet) {
+         max-width: 400px;
+         height: 300px;
+         overflow: auto;
+      }
+      padding: 0px 10px;
       color: $font-color-main;
       font-weight: $font-weight-semi-bold;
-      max-width: 350px;
+      max-width: 450px;
    }
    &__name {
       text-align: center;

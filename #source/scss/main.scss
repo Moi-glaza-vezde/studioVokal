@@ -6,21 +6,46 @@
    background-color: $color-bg;
 
    &__container {
-      padding: 50px 0;
+      @media (max-width: $breakpoint-tablet-xl) {
+         flex-wrap: wrap;
+      }
+      padding: 50px 15px;
       display: flex;
       justify-content: center;
       gap: 100px;
    }
-
+   &__title-box {
+      @media (max-width: $breakpoint-tablet-xl) {
+         order: 2;
+      }
+   }
    &__title {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-semi-xl;
+      }
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-xl;
+         text-align: center;
+      }
+
       font-size: $font-size-xxl;
       font-weight: $font-weight-bold;
       color: $font-color-main;
+
+      padding: 10px 15px;
+
+      border-radius: 10px;
+      border: 1px solid $color-primary;
+      box-shadow: 0 0 8px 0 #814b8a, 0 0 16px 2px rgba(129, 75, 138, 0.35);
    }
 
    &__title-sub-title {
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
       font-size: $font-size-xl;
       color: $font-color-main;
+      margin-top: 10px;
    }
 
    &__text-block {
@@ -45,6 +70,9 @@
    }
 
    &__image {
+      @media (max-width: $breakpoint-tablet-xl) {
+         max-width: 800px;
+      }
       max-width: 500px;
       align-self: center;
       img {
@@ -66,7 +94,7 @@
    &__button {
       font-size: $font-size-md;
       color: $font-color-invert;
-      background-color: $color-accent-light;
+      background-color: $color-button-wa;
 
       display: inline-block;
       border-radius: 10px;
@@ -74,5 +102,11 @@
 
       margin-top: 50px;
       padding: 10px;
+
+      transition: transform 0.2s cubic-bezier(0.45, 0.1, 0.15, 1);
+
+      &:hover {
+         transform: scale(1.1);
+      }
    }
 }

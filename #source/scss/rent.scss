@@ -7,11 +7,31 @@
    }
 
    &__title {
+      @media (max-width: $breakpoint-tablet) {
+         font-size: $font-size-semi-xl;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
       font-size: $font-size-xxl;
       color: $font-color-main;
+
+      border-radius: 10px;
+      border: 1px solid $color-primary;
+      box-shadow: 0 0 8px 0 #814b8a, 0 0 16px 2px rgba(129, 75, 138, 0.35);
+      padding: 10px 0;
+      max-width: 700px;
+      text-align: center;
    }
 
    &__subtitle {
+      @media (max-width: $breakpoint-mobile) {
+         font-size: $font-size-lg2;
+      }
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-lg;
+      }
       font-size: $font-size-xl;
       color: $font-color-main;
       margin-top: 30px;
@@ -26,6 +46,9 @@
    }
 
    &__item {
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       padding: 10px;
       font-size: $font-size-lg;
       color: $color-primary;
@@ -36,30 +59,45 @@
    }
 
    &__capacity {
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       font-size: $font-size-lg2;
       color: $font-color-main;
       margin-top: 10px;
    }
 
    &__features {
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       font-size: $font-size-lg2;
       color: $font-color-main;
       margin-top: 10px;
    }
 
    &__extras {
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       font-size: $font-size-lg2;
       color: $font-color-main;
       margin-top: 10px;
    }
 
    &__prices {
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       font-size: $font-size-lg2;
       color: $font-color-main;
       margin-top: 10px;
    }
 
    &__price {
+      @media (max-width: $breakpoint-mobile-sm) {
+         font-size: $font-size-md;
+      }
       font-size: $font-size-lg2;
       color: $color-accent-light;
       margin-top: 10px;

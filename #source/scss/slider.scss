@@ -51,12 +51,23 @@
 }
 
 .slider__item {
+   @media (max-width: $breakpoint-tablet) {
+      height: 50vh;
+   }
+
+   @media (max-width: $breakpoint-mobile) {
+   }
+   @media (max-width: $breakpoint-mobile-sm) {
+   }
    position: relative;
    //filter: brightness(0.8);
    max-width: 100%;
    margin: 0 auto;
    height: 95vh;
    img {
+      @media (max-width: $breakpoint-tablet) {
+         height: 50vh;
+      }
       width: 100%;
       filter: brightness(0.6);
       height: 95vh;

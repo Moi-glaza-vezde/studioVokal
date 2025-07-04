@@ -4,16 +4,27 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- В head -->
+      <!-- Favicon 32x32 -->
+      <link rel="icon" type="image/png" sizes="32x32" href="./favicon32.png" />
+      <!-- Favicon 16x16 -->
+      <link rel="icon" type="image/png" sizes="16x16" href="./favicon16.png" />
+
+      <!-- Для Apple устройств -->
+      <link rel="apple-touch-icon" href="./favicon32.png" />
       <link
          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
          rel="stylesheet" />
 
       <link rel="stylesheet" href="./css/styles.css" />
-      <title>Document</title>
+      <title>Уроки вокала в Москве — для взрослых и детей | +7-903-568-5184</title>
+      <meta
+         name="description"
+         content="Уроки вокала для взрослых и детей в Москве. Дружеская атмосфера, снятие зажимов, регулярные квартирники. Адрес: Стромынка, д.11, Сокольники. Запишитесь в WhatsApp!" />
    </head>
    <body>
-      <section class="wrapper">
-         <header class="header">
+      <section id="top" class="wrapper">
+         <button class="arrow-up"><a href="#top">&#8593;</a></button>
+         <header class="header fade-in-on-scroll">
             <div class="header__container container">
                <!-- Логотип -->
                <div class="header__logo">
@@ -21,8 +32,12 @@
                </div>
 
                <!-- Навигация -->
-               <nav class="header__nav">
-                  <ul class="header__nav-list">
+               <nav id="navMenu" class="header__nav">
+                  <!-- <button class="header__nav-close">&times;</button> -->
+                  <button id="closeButtonMenu" class="header__nav-close">
+                     <img src="./img/icons/close.png" alt="" />
+                  </button>
+                  <ul id="navList" class="header__nav-list">
                      <li class="header__nav-item">
                         <a href="#about" class="header__nav-link">О нас</a>
                      </li>
@@ -44,16 +59,22 @@
                <!-- Контакты -->
                <div class="header__contacts">
                   <!-- <a href="tel:+71234567890" class="header__phone">+7 (123) 456-78-90</a> -->
-                  <a href="https://t.me/yourgroup" target="_blank" class="header__telegram">
+                  <a href="https://t.me/enotygoo" target="_blank" class="header__telegram">
                      <img src="./img/icons/tgIcon.png" alt="Иконка телеграма" />
                   </a>
 
-                  <button class="header__call-btn">Позвонить</button>
+                  <button class="header__call-btn">
+                     <a href="tel:+79035685184">+7-903-568-5184</a>
+                  </button>
+               </div>
+
+               <div class="header__menu-burger">
+                  <img id="buttonMenu" src="./img/icons/burgerMenu.png" alt="" />
                </div>
             </div>
          </header>
 
-         <main class="main">
+         <main class="main fade-in-on-scroll">
             <div class="main__container container">
                <!-- Заголовок -->
                <div class="main__title-box">
@@ -79,7 +100,7 @@
                      <img src="./img/main/qr.jpg" alt="QR код чата" class="main__qr-img" />
                   </div>
                   <!-- Кнопка для перехода в WhatsApp -->
-                  <a href="https://wa.me/71234567890" target="_blank" class="main__button">
+                  <a href="https://wa.me/+79035685184" target="_blank" class="main__button">
                      Записаться в WhatsApp
                   </a>
                </div>
@@ -91,13 +112,13 @@
                         Москва, Стромынка, д.11, р-н Сокольники</span
                      >
 
-                     <a href="tel:+71234567890" class="main__phone">+7 (123) 456-78-90</a>
+                     <a href="tel:+71234567890" class="main__phone">+7-903-568-5184</a>
                   </div>
                </div>
             </div>
          </main>
 
-         <section id="teachers" class="teachers">
+         <section id="teachers" class="teachers fade-in-on-scroll">
             <div class="teachers__container container">
                <!-- Первый заголовок -->
                <h2 id="program" class="teachers__studio-title">
@@ -271,7 +292,7 @@
                            <img src="./img/teachers/a.jpg" alt="Имя преподавателя" />
                         </div>
                         <div class="teacher-card__card-info">
-                           <h3 class="teacher-card__name">Ервандян Эдита</h3>
+                           <h3 class="teacher-card__name">Эдита</h3>
 
                            <div class="teacher-card__experience">
                               <p class="teacher-card__text">Немного обо мне:</p>
@@ -350,7 +371,7 @@
                            <img src="./img/teachers/n.jpg" alt="Имя преподавателя" />
                         </div>
                         <div class="teacher-card__card-info">
-                           <h3 class="teacher-card__name">Наталья Нэйман</h3>
+                           <h3 class="teacher-card__name">Наталья</h3>
                            <p class="teacher-card__intro">Преподаю вокал онлайн</p>
 
                            <div class="teacher-card__experience">
@@ -562,7 +583,7 @@
             </div>
          </section>
 
-         <section class="pricing">
+         <section class="pricing fade-in-on-scroll">
             <div class="pricing__container container">
                <h2 id="prices" class="pricing__title">Цены на занятия</h2>
 
@@ -573,7 +594,7 @@
                      <p class="pricing__card-price">2200 ₽ / 50 мин</p>
                      <p class="pricing__card-note">Абонемент на 4 занятия — 8000 ₽</p>
                      <a
-                        href="https://wa.me/71234567890"
+                        href="https://wa.me/+79035685184"
                         target="_blank"
                         class="pricing__card-button callBtn">
                         Записаться в WhatsApp
@@ -586,7 +607,7 @@
                      <p class="pricing__card-price">1500 ₽ / 1.5 часа</p>
                      <p class="pricing__card-note">В группе не более 3 человек</p>
                      <a
-                        href="https://wa.me/71234567890"
+                        href="https://wa.me/+79035685184"
                         target="_blank"
                         class="pricing__card-button callBtn">
                         Записаться в WhatsApp
@@ -599,7 +620,7 @@
                      <p class="pricing__card-price">2000 ₽ / час</p>
                      <p class="pricing__card-note">Удобный формат на платформе Zoom</p>
                      <a
-                        href="https://wa.me/71234567890"
+                        href="https://wa.me/+79035685184"
                         target="_blank"
                         class="pricing__card-button callBtn">
                         Записаться в WhatsApp
@@ -612,7 +633,7 @@
                      <p class="pricing__card-price">Индивидуальное — 1800 ₽ / 50 мин</p>
                      <p class="pricing__card-note">Групповое — 1000 ₽ / 1.5 часа</p>
                      <a
-                        href="https://wa.me/71234567890"
+                        href="https://wa.me/+79035685184"
                         target="_blank"
                         class="pricing__card-button callBtn">
                         Записаться в WhatsApp
@@ -622,7 +643,7 @@
             </div>
          </section>
 
-         <section class="about">
+         <section class="about fade-in-on-scroll">
             <div class="about__container container">
                <h2 id="about" class="about__title">О нас</h2>
                <div class="about__box">
@@ -648,8 +669,15 @@
                </div>
             </div>
          </section>
-
-         <section class="collab">
+         <section class="events fade-in-on-scroll">
+            <div class="events__container container">
+               <h2 class="events__title">
+                  <img src="./img/icons/vokal.png" alt="" />
+                  <a target="_blank" href="https://t.me/enotygoo">Анонсы мероприятий</a>
+               </h2>
+            </div>
+         </section>
+         <section class="collab fade-in-on-scroll">
             <div class="collab__container container">
                <div class="collab__main-img"><img src="./img/main/note.png" alt="ноты" /></div>
                <h2 class="collab__title">Сотрудничество</h2>
@@ -684,7 +712,7 @@
             </div>
          </section>
 
-         <section class="slider">
+         <section class="slider fade-in-on-scroll">
             <div class="slider__item">
                <img src="./img/slider/1.jpg" alt="" />
                <div class="slider__item-textbox">
@@ -722,7 +750,7 @@
             </div>
          </section>
 
-         <section class="gallery">
+         <section class="gallery fade-in-on-scroll">
             <div class="gallery__container container">
                <h2 class="gallery__title">Медиа жизнь студии</h2>
 
@@ -785,7 +813,7 @@
             </div>
          </section>
 
-         <section class="rent">
+         <section class="rent fade-in-on-scroll">
             <div class="rent__container container">
                <h2 id="rent" class="rent__title">Гибкие условия по аренде</h2>
 
@@ -833,7 +861,7 @@
             </div>
          </section>
 
-         <section class="contacts">
+         <section class="contacts fade-in-on-scroll">
             <div class="contacts__container container">
                <h2 id="contacts" class="contacts__title">Контакты</h2>
 
@@ -859,7 +887,7 @@
                </div>
             </div>
          </section>
-         <section class="map">
+         <section class="map fade-in-on-scroll">
             <div class="container" style="position: relative; overflow: hidden">
                <a
                   href="https://yandex.kz/maps/org/art_studiya_yenoty/23935281271/?utm_medium=mapframe&utm_source=maps"
