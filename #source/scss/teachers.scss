@@ -113,8 +113,28 @@
          transform: translateX(20px);
       }
    }
-}
 
+   &__link-tg {
+      max-width: 350px;
+      margin-top: 20px;
+      transition: transform 0.3s;
+
+      a {
+         @media (max-width: $breakpoint-mobile) {
+            font-size: $font-size-lg;
+         }
+         color: $font-color-invert;
+         font-size: $font-size-lg2;
+         text-decoration: underline dashed;
+         text-underline-offset: 10px;
+         transition: transform 0.3s;
+      }
+
+      &:hover {
+         transform: scale(1.03);
+      }
+   }
+}
 .teacher-card {
    @media (max-width: $breakpoint-tablet) {
       max-width: 400px;

@@ -495,6 +495,32 @@ body {
       -webkit-transform: translateX(20px);
       -ms-transform: translateX(20px);
       transform: translateX(20px); }
+  .teachers__link-tg {
+    max-width: 350px;
+    margin-top: 20px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+    .teachers__link-tg a {
+      color: #ffffff;
+      font-size: 25px;
+      -webkit-text-decoration: underline dashed;
+      text-decoration: underline dashed;
+      text-underline-offset: 10px;
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      -o-transition: transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
+      @media (max-width: 600px) {
+        .teachers__link-tg a {
+          font-size: 20px; } }
+    .teachers__link-tg:hover {
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03); }
 
 .teacher-card {
   background-color: #814b8a;
